@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".fragment.HomeFragment"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="122dp"
+            android:layout_height="206dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/logo_temp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="120dp"
+            android:text="My Luandry\nMake your booking now!"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/makeBookBtn"
+            android:layout_width="115dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_botton"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.172"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Booking"
+
+            app:layout_constraintEnd_toEndOf="@+id/makeBookBtn"
+            app:layout_constraintStart_toStartOf="@+id/makeBookBtn"
+            app:layout_constraintTop_toBottomOf="@+id/makeBookBtn" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Booking"
+
+            app:layout_constraintEnd_toEndOf="@+id/makeBookBtn"
+            app:layout_constraintStart_toStartOf="@+id/makeBookBtn"
+            app:layout_constraintTop_toBottomOf="@+id/makeBookBtn" />
+
+        <ImageButton
+            android:id="@+id/serviceInfoBtn"
+            android:layout_width="115dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="112dp"
+            android:background="@drawable/round_botton"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_info_24"
+            app:layout_constraintStart_toEndOf="@+id/makeBookBtn"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:text="Service Info"
+            app:layout_constraintEnd_toEndOf="@+id/serviceInfoBtn"
+            app:layout_constraintHorizontal_bias="0.536"
+            app:layout_constraintStart_toStartOf="@+id/serviceInfoBtn"
+            app:layout_constraintTop_toBottomOf="@+id/serviceInfoBtn" />
+
+        <ImageButton
+            android:id="@+id/contactUsBtn"
+            android:layout_width="115dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="84dp"
+
+            android:background="@drawable/round_botton"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_contacts_24"
+            app:layout_constraintStart_toEndOf="@+id/makeBookBtn"
+            app:layout_constraintTop_toBottomOf="@+id/serviceInfoBtn" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Contact us"
+            app:layout_constraintEnd_toEndOf="@+id/contactUsBtn"
+            app:layout_constraintStart_toStartOf="@+id/contactUsBtn"
+            app:layout_constraintTop_toBottomOf="@+id/contactUsBtn" />
+
+        <ImageButton
+            android:id="@+id/allbookingBtn"
+            android:layout_width="115dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/round_botton"
+            android:scaleType="fitXY"
+            android:src="@drawable/book_ic"
+            app:layout_constraintStart_toStartOf="@+id/makeBookBtn"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="All Booking"
+            app:layout_constraintEnd_toEndOf="@+id/allbookingBtn"
+            app:layout_constraintStart_toStartOf="@+id/allbookingBtn"
+            app:layout_constraintTop_toBottomOf="@+id/allbookingBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
